@@ -37,7 +37,7 @@
 <style lang="scss" scoped>
 .bottom-menu {
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
   position: fixed;
   background: #f7fbfa;
   ul {
