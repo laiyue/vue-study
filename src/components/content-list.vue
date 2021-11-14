@@ -4,7 +4,7 @@
       <li>
         <div class="info">
           <div class="info-left">
-            <a href=""
+            <a href="" class="pic-box"
               ><img src="../assets/images/003_11.png" alt="" class="pic"
             /></a>
           </div>
@@ -45,7 +45,7 @@
       <li>
         <div class="info">
           <div class="info-left">
-            <a href=""
+            <a href="" class="pic-box"
               ><img src="../assets/images/003_11.png" alt="" class="pic"
             /></a>
           </div>
@@ -86,7 +86,7 @@
       <li>
         <div class="info">
           <div class="info-left">
-            <a href=""
+            <a href="" class="pic-box"
               ><img src="../assets/images/003_11.png" alt="" class="pic"
             /></a>
           </div>
@@ -127,7 +127,7 @@
       <li>
         <div class="info">
           <div class="info-left">
-            <a href=""
+            <a href="" class="pic-box"
               ><img src="../assets/images/003_11.png" alt="" class="pic"
             /></a>
           </div>
@@ -188,10 +188,10 @@
     .info-left {
       flex-grow: 1;
       vertical-align: middle;
-      a {
+      .pic-box {
         display: block;
       }
-      img {
+      .pic {
         width: 80px;
         height: 120px;
       }
@@ -203,7 +203,7 @@
       justify-content: center;
       flex-grow: 1;
       max-width: 550px;
-      .title{
+      .title {
         margin-bottom: 8px;
       }
       .author,
@@ -223,17 +223,12 @@
           margin: 0 10px;
           background: grey;
         }
-        .sticky-info,
-        .flexble-info {
-          display: inline-flex;
-          justify-content: space-around;
-        }
       }
       .intro {
-         display: -webkit-box;
-         overflow: hidden;
-         -webkit-box-orient: vertical;
-         -webkit-line-clamp: 2;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
         margin-bottom: 8px;
         height: 40 px;
         word-break: break-word;
