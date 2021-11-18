@@ -1,6 +1,8 @@
 <template>
 <div>
     <tab-bar></tab-bar>
+    <br>
+    <br>
     <swiper-list></swiper-list>
     <content-list></content-list>
     <bottom-menu></bottom-menu>
