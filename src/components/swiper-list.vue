@@ -16,12 +16,12 @@
 .swiper-wrap{
   margin-top: -10px;
   width: 400%;
-  height: 8.5rem;
+  height: 12rem;
    transform: translate(0,0); /* 初始位置位移 */
     animation: loop 10s linear infinite;
 .pic{
   width: 25%;
-  height: 8.5rem;
+  height: 12rem;
 }
 } 
 }
