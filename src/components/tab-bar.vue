@@ -30,7 +30,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left:100%;
+      left:0;
       width: 0%;
       height: 100%;
       border-bottom: 2px solid #000;
@@ -39,9 +39,9 @@
       left: 0;
       width: 100%;
     }
-    li:hover ~ li::before {
-      left: 0;
-    }
+    // li:hover ~ li::before {
+    //   left: 0;
+    // }
   }
 }
 </style>
