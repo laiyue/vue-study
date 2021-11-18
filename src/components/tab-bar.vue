@@ -13,13 +13,13 @@
 .nav {
   background: #f7fbfa;
   width: 100%;
-  top: 0px;
+  top: 0;
   position: fixed;
+  z-index: 999;
   .nav-list {
     width: 100%;
     display: flex;
     justify-content: center;
-
     .nav-item {
       flex-grow: 1;
       height: 3rem;
@@ -30,7 +30,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left:0;
+      left: 0;
       width: 0%;
       height: 100%;
       border-bottom: 2px solid #000;
@@ -39,9 +39,6 @@
       left: 0;
       width: 100%;
     }
-    // li:hover ~ li::before {
-    //   left: 0;
-    // }
   }
 }
 </style>
