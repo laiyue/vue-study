@@ -1,11 +1,11 @@
 <template>
   <div class="nav">
     <ul>
-      <li>精选</li>
-      <li>精选</li>
-      <li>精选</li>
-      <li>精选</li>
-      <li>精选</li>
+      <li>悬疑</li>
+      <li>都市</li>
+      <li>职业</li>
+      <li>言情</li>
+      <li>历史</li>
     </ul>
   </div>
 </template>

@@ -8,7 +8,7 @@
 
 </template>
 <script>
-import tabBar from "../components/tabbar.vue";
+import tabBar from "../components/tab-bar.vue";
 import bottomMenu from "../components/bottom-menu.vue";
 import contentList from "../components/content-list.vue";
 import swiperList from '../components/swiper-list.vue';

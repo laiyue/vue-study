@@ -3,31 +3,31 @@
     <ul>
       <li class="bottom-menu-item">
         <a href="">
-          <span class="icon-add"></span>
+          <span class="mui-icon-extra mui-icon-extra-lamp"></span>
           <label for="">原创</label>
         </a>
       </li>
       <li class="bottom-menu-item">
         <a href="">
-          <span class="icon-add"></span>
+          <span class="mui-icon-extra mui-icon-extra-cart"></span>
           <label for="">购物车</label>
         </a>
       </li>
       <li class="bottom-menu-item">
         <a href="">
-          <span class="icon-add"></span>
+          <span class="mui-icon-extra mui-icon-extra-xiaoshuo"></span>
           <label for="">书店</label>
         </a>
       </li>
       <li class="bottom-menu-item">
         <a href="">
-          <span class="icon-add"></span>
+          <span class="mui-icon-extra mui-icon-extra-peoples"></span>
           <label for="">我的</label>
         </a>
       </li>
       <li class="bottom-menu-item">
         <a href="">
-          <span class="icon-add"></span>
+          <span class="mui-icon-extra mui-icon-extra-find"></span>
           <label for="">本地</label>
         </a>
       </li>
