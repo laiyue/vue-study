@@ -17,11 +17,28 @@
   margin-top: -10px;
   width: 400%;
   height: 8.5rem;
+   transform: translate(0,0); /* 初始位置位移 */
+    animation: loop 10s linear infinite;
 .pic{
   width: 25%;
   height: 8.5rem;
 }
 } 
+}
+
+@keyframes loop {
+    0% {transform: translate(0,0);}
+    20% {transform: translate(0,0);} /* 停留1500ms */
+
+    25% {transform: translate(-25%,0);} /* 切换500ms 位移-20% */
+    45% {transform: translate(-25%,0);}
+
+    50% {transform: translate(-50%,0);}
+    70% {transform: translate(-50%,0);}
+
+    75% {transform: translate(-75%,0);}
+    95% {transform: translate(-75%,0);}
+    100% {transform: translate(0,0);} /* 复位到第一张图片 */
 }
 
 
