@@ -1,22 +1,24 @@
 <template>
 <div>
     <tab-bar></tab-bar>
+    <swiper-list></swiper-list>
     <content-list></content-list>
     <bottom-menu></bottom-menu>
 </div>
 
 </template>
 <script>
-import TabBar from "../components/tabbar.vue";
+import tabBar from "../components/tabbar.vue";
 import bottomMenu from "../components/bottom-menu.vue";
-import ContentList from "../components/content-list.vue";
-
+import contentList from "../components/content-list.vue";
+import swiperList from '../components/swiper-list.vue';
 export default {
   name: "App",
   components: {
-    TabBar,
+    tabBar,
     bottomMenu,
-    ContentList,
+    contentList,
+    swiperList
   },
 };
 </script>

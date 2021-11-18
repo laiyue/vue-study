@@ -47,7 +47,7 @@
     align-items: center;
     li {
       flex-grow: 1;
-      a {
+      a{
         display: flex;
         flex-direction: column;
         padding: 0.5rem 0rem;
