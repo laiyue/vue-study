@@ -1,14 +1,27 @@
 <template>
   <div class="nav">
     <ul class="nav-list">
-      <li class="nav-item">悬疑</li>
-      <li class="nav-item">都市</li>
-      <li class="nav-item">职业</li>
-      <li class="nav-item">言情</li>
-      <li class="nav-item">历史</li>
+      <li class="nav-item" v-for="item in datas" :key="item.title">
+        {{ item.title }}
+      </li>
     </ul>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      datas: [
+        { id: 1, title: "悬疑" },
+        { id: 2, title: "都市" },
+        { id: 3, title: "都市" },
+        { id: 4, title: "言情" },
+        { id: 5, title: "历史" },
+      ],
+    };
+  },
+};
+</script>
 <style lang="scss" scoped>
 .nav {
   background: #f7fbfa;

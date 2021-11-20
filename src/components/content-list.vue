@@ -1,149 +1,23 @@
 <template>
   <div class="page">
     <ul class="content-list">
-      <li>
+      <li v-for="item in datas" :key="item.id">
         <div class="info">
           <div class="info-left">
-            <a href="" class="pic-box"
-              ><img src="../assets/images/003_11.png" alt="" class="pic"
-            /></a>
+            <a href="" class="pic-box">
+              <img :src="item.pic" alt="" class="pic" />
+            </a>
           </div>
           <div class="info-right">
             <div class="title">
-              <span
-                ><span>
-                  <h4>满青霄·隐秘的CP</h4>
-                </span></span
-              >
+              <span><span>
+                  <h4>{{ item.title }}</h4>
+                </span></span>
             </div>
-            <div class="author">容容</div>
+            <div class="author">{{ item.author }}</div>
             <div class="intro">
               <span>
-                本来想写一部玛丽苏，却越写越正经。他们的感情不能见光，否则便是天下大乱，血流千里。
-                只有瞒天过海，才能绝处逢生。“我若死了，就只能陪你一程；我若活着，这一程便是余生。”
-              </span>
-            </div>
-            <div class="extro-info">
-              <div class="sticky-info">
-                <a>历史</a>
-                <span class="separator"></span>
-                <span>160万字</span>
-                <span class="separator"></span>
-              </div>
-              <div class="flexble-info">
-                <span class="flexble-info-item">历史传奇</span>
-                <span class="separator"></span>
-                <span class="flexble-info-item">连载中</span>
-              </div>
-            </div>
-            <div class="actions">
-              <a href="">加入书架</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="info">
-          <div class="info-left">
-            <a href="" class="pic-box"
-              ><img src="../assets/images/003_11.png" alt="" class="pic"
-            /></a>
-          </div>
-          <div class="info-right">
-            <div class="title">
-              <span
-                ><span>
-                  <h4>满青霄·隐秘的CP</h4>
-                </span></span
-              >
-            </div>
-            <div class="author">容容</div>
-            <div class="intro">
-              <span>
-                本来想写一部玛丽苏，却越写越正经。他们的感情不能见光，否则便是天下大乱，血流千里。
-                只有瞒天过海，才能绝处逢生。“我若死了，就只能陪你一程；我若活着，这一程便是余生。”
-              </span>
-            </div>
-            <div class="extro-info">
-              <div class="sticky-info">
-                <a>历史</a>
-                <span class="separator"></span>
-                <span>160万字</span>
-                <span class="separator"></span>
-              </div>
-              <div class="flexble-info">
-                <span class="flexble-info-item">历史传奇</span>
-                <span class="separator"></span>
-                <span class="flexble-info-item">连载中</span>
-              </div>
-            </div>
-            <div class="actions">
-              <a href="">加入书架</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="info">
-          <div class="info-left">
-            <a href="" class="pic-box"
-              ><img src="../assets/images/003_11.png" alt="" class="pic"
-            /></a>
-          </div>
-          <div class="info-right">
-            <div class="title">
-              <span
-                ><span>
-                  <h4>满青霄·隐秘的CP</h4>
-                </span></span
-              >
-            </div>
-            <div class="author">容容</div>
-            <div class="intro">
-              <span>
-                本来想写一部玛丽苏，却越写越正经。他们的感情不能见光，否则便是天下大乱，血流千里。
-                只有瞒天过海，才能绝处逢生。“我若死了，就只能陪你一程；我若活着，这一程便是余生。”
-              </span>
-            </div>
-            <div class="extro-info">
-              <div class="sticky-info">
-                <a>历史</a>
-                <span class="separator"></span>
-                <span>160万字</span>
-                <span class="separator"></span>
-              </div>
-              <div class="flexble-info">
-                <span class="flexble-info-item">历史传奇</span>
-                <span class="separator"></span>
-                <span class="flexble-info-item">连载中</span>
-              </div>
-            </div>
-            <div class="actions">
-              <a href="">加入书架</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="info">
-          <div class="info-left">
-            <a href="" class="pic-box"
-              ><img src="../assets/images/003_11.png" alt="" class="pic"
-            /></a>
-          </div>
-          <div class="info-right">
-            <div class="title">
-              <span
-                ><span>
-                  <h4>满青霄·隐秘的CP</h4>
-                </span></span
-              >
-            </div>
-            <div class="author">容容</div>
-            <div class="intro">
-              <span>
-                本来想写一部玛丽苏，却越写越正经。他们的感情不能见光，否则便是天下大乱，血流千里。
-                只有瞒天过海，才能绝处逢生。“我若死了，就只能陪你一程；我若活着，这一程便是余生。”
+                {{ item.intro }}
               </span>
             </div>
             <div class="extro-info">
@@ -169,6 +43,46 @@
   </div>
 </template>
 <script>
+export default {
+  data() {
+    return {
+      datas: [
+        {
+          id: 1,
+          title: "满青霄·隐秘的CP",
+          pic: require("../assets/images/003_11.png"),
+          author: "容容",
+          intro: `本来想写一部玛丽苏，却越写越正经。他们的感情不能见光，否则便是天下大乱，血流千里。
+                只有瞒天过海，才能绝处逢生。“我若死了，就只能陪你一程；我若活着，这一程便是余生。`,
+        },
+        {
+          id: 1,
+          title: "满青霄·隐秘的CP",
+          pic: require("../assets/images/003_11.png"),
+          author: "容容",
+          intro: `本来想写一部玛丽苏，却越写越正经。他们的感情不能见光，否则便是天下大乱，血流千里。
+                只有瞒天过海，才能绝处逢生。“我若死了，就只能陪你一程；我若活着，这一程便是余生。`,
+        },
+        {
+          id: 1,
+          title: "满青霄·隐秘的CP",
+          pic: require("../assets/images/003_11.png"),
+          author: "容容",
+          intro: `本来想写一部玛丽苏，却越写越正经。他们的感情不能见光，否则便是天下大乱，血流千里。
+                只有瞒天过海，才能绝处逢生。“我若死了，就只能陪你一程；我若活着，这一程便是余生。`,
+        },
+        {
+          id: 1,
+          title: "满青霄·隐秘的CP",
+          pic: require("../assets/images/003_11.png"),
+          author: "容容",
+          intro: `本来想写一部玛丽苏，却越写越正经。他们的感情不能见光，否则便是天下大乱，血流千里。
+                只有瞒天过海，才能绝处逢生。“我若死了，就只能陪你一程；我若活着，这一程便是余生。`,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
