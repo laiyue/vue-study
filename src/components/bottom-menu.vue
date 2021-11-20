@@ -4,7 +4,7 @@
       <li class="bottom-menu-item" v-for="item in datas" :key="item.title">
         <a href="">
           <span class="mui-icon-extra" :class="item.icon"></span>
-          <label for="">{{item.title}}</label>
+          <label for="">{{ item.title }}</label>
         </a>
       </li>
     </ul>
@@ -16,10 +16,10 @@ export default {
     return {
       datas: [
         { title: "原创", icon: "mui-icon-extra-lamp" },
-        { title: "购物车",icon: "mui-icon-extra-cart" },
+        { title: "购物车", icon: "mui-icon-extra-cart" },
         { title: "书店", icon: "mui-icon-extra-xiaoshuo" },
         { title: "我的", icon: "mui-icon-extra-peoples" },
-        { title: "本地",icon: "mui-icon-extra-find" }
+        { title: "本地", icon: "mui-icon-extra-find" },
       ],
     };
   },

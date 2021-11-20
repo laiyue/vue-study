@@ -10,9 +10,11 @@
           </div>
           <div class="info-right">
             <div class="title">
-              <span><span>
+              <span
+                ><span>
                   <h4>{{ item.title }}</h4>
-                </span></span>
+                </span></span
+              >
             </div>
             <div class="author">{{ item.author }}</div>
             <div class="intro">
